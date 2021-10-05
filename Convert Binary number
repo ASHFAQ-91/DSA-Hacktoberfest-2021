@@ -1,0 +1,19 @@
+// Write a C++ program to print binary of a given decimal number.
+#include<iostream>
+using namespace std;
+int main()
+{
+    long long int n, i, arr[20];
+    cout << "Enter a number: ";
+    cin >> n;
+    for(i=0; n>0; i++)
+    {
+        arr[i] = n % 2;
+        n /= 2;
+    }
+    for(i=i-1; i>=0; i--)
+    {
+        cout << arr[i];
+    }
+    return 0;
+}
